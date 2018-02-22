@@ -9,17 +9,23 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <license>Apache 2.0</license>
     <keywords>cordova, update, security, provider, android, google, play-services, play, services</keywords>
 
+    <js-module src="www/Promise.js" name="Promise"/>
 
     <js-module src="www/SecurityProviderPlugin.js" name="SecurityProvider">
         <clobbers target="SecurityProvider" />
     </js-module>
 
     <!-- android -->
-    <platform name="android">        
-        <source-file src="src/SecurityProvider.java" />
+    <platform name="android">
+        <config-file target="config.xml" parent="/*">
+            <feature name="SecurityProvider">
+                <param name="android-package" value="com.abhishekjoshi.updatesecurityprovider.SecurityProvider" />
+            </feature>
+        </config-file>
+
+        <source-file src="src/SecurityProvider.java" target-dir="src/com/abhishekjoshi/updatesecurityprovider" />        <!-- Depend on latest version of GCM from play services -->
         <!-- Depend on latest version of GCM from play services -->
-        <framework src="com.google.android.gms:play-services-base:11.0.0" />
-        <!-- Depend on v21 of appcompat-v7 support library -->
-        <framework src="com.android.support:appcompat-v7:21+" />  
+        <framework src="com.google.android.gms:play-services-base:11.8.0" />
+        <framework src="com.android.support:appcompat-v7:26.1.0" />
     </platform>
 </plugin>
