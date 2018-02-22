@@ -1,0 +1,27 @@
+{
+	"name": "cordova-update-security-provider",
+	"version": "1.0.0",
+	"cordova": {
+		"id": "cordova-plugin-orgchart",
+		"platforms": [
+			"android"
+		]
+	},
+    "description": "A plugin that checks Google Play Services to ensure we are susceptible to man in the middle attacks. See for more here: https://developer.android.com/training/articles/security-gms-provider.html ",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/AbhishekJoshi/cordova-update-security-provider"
+    },
+    "keywords": [
+        "cordova",
+        "device",
+        "update", 
+        "security", 
+        "provider", 
+        "android", 
+        "google", 
+        "play-services", 
+        "play", 
+        "services"
+      ]
+}
