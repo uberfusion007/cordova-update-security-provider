@@ -16,9 +16,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
     <!-- android -->
     <platform name="android">        
-        <source-file src="src/SecurityProvider.java" target-dir="src/com/abhishekjoshi/updatesecurityprovider" />
+        <source-file src="src/SecurityProvider.java" />
         <!-- Depend on latest version of GCM from play services -->
-        <framework src="com.google.android.gms:play-services-gcm:+" />
+        <framework src="com.google.android.gms:play-services-base:11.0.0" />
         <!-- Depend on v21 of appcompat-v7 support library -->
-        <framework src="com.android.support:appcompat-v7:21+" />    </platform>
+        <framework src="com.android.support:appcompat-v7:21+" />  
+    </platform>
 </plugin>
