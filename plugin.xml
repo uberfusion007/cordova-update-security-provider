@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
 xmlns:android="http://schemas.android.com/apk/res/android"
-           id="com.abhishekjoshi.update-security-provider-cordova"
+           id="cordova-update-security-provider"
       version="1.0.0">
     <name>Cordova Update Security Provider</name>
     <description>Cordova Update Security Provider</description>
@@ -10,17 +10,18 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <keywords>cordova, update, security, provider, android, google, play-services, play, services</keywords>
 
 
-    <js-module src="www/SecurityProviderPlugin.js" name="SecurityProviderPlugin">
-        <clobbers target="SecurityProviderPlugin" />
+    <js-module src="www/SecurityProviderPlugin.js" name="SecurityProvider">
+        <clobbers target="SecurityProvider" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+
         <!-- <config-file target="res/xml/config.xml" parent="/*">
 
         </config-file> -->
         
-        <source-file src="src/android/SecurityProvider.java" target-dir="src/com/abhishekjoshi/update-security-provider-cordova" />
+        <source-file src="src/android/SecurityProvider.java" target-dir="src/com/abhishekjoshi/cordova-update-security-provider" />
         <!-- <lib-file src="src/android/google-play-services.jar" /> -->
     </platform>
 </plugin>

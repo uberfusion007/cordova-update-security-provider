@@ -2,7 +2,7 @@
 	"name": "cordova-update-security-provider",
 	"version": "1.0.0",
 	"cordova": {
-		"id": "cordova-plugin-orgchart",
+		"id": "cordova-update-security-provider",
 		"platforms": [
 			"android"
 		]
