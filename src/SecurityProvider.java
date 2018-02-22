@@ -18,7 +18,7 @@ import org.json.JSONObject;
 public class SecurityProvider extends CordovaPlugin implements ProviderInstaller.ProviderInstallListener{
     AlertDialog alertDialog;
     private static final int ERROR_DIALOG_REQUEST_CODE = 1;
-    public static final String INSTALL_IF_NEEDED = "installIfNeeded";
+    public static final String INSTALL_IF_NEEDED = "installIfNeededAsync";
     protected static CallbackContext _callbackContext = null;
     private boolean mRetryProviderInstall;
     private ContentValues returnValues;

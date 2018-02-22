@@ -10,12 +10,13 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     <keywords>cordova, update, security, provider, android, google, play-services, play, services</keywords>
 
 
-    <js-module src="www/SecurityProviderPlugin.js" name="SecurityProviderPlugin">
+    <js-module src="www/SecurityProviderPlugin.js" name="SecurityProvider">
         <clobbers target="SecurityProviderPlugin" />
     </js-module>
 
     <!-- android -->
     <platform name="android">
+
         <!-- <config-file target="res/xml/config.xml" parent="/*">
 
         </config-file> -->
