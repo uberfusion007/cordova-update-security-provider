@@ -1,4 +1,4 @@
-package com.danielcwilson.plugins.analytics;
+package com.abhishekjoshi.updatesecurityprovider;
 
 import android.content.ContentValues;
 import android.content.DialogInterface;

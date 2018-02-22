@@ -15,13 +15,10 @@ xmlns:android="http://schemas.android.com/apk/res/android"
     </js-module>
 
     <!-- android -->
-    <platform name="android">
-
-        <!-- <config-file target="res/xml/config.xml" parent="/*">
-
-        </config-file> -->
-        
-        <source-file src="src/SecurityProvider.java" target-dir="src/com/abhishekjoshi/cordova-update-security-provider" />
-        <!-- <lib-file src="src/android/google-play-services.jar" /> -->
-    </platform>
+    <platform name="android">        
+        <source-file src="src/SecurityProvider.java" target-dir="src/com/abhishekjoshi/updatesecurityprovider" />
+        <!-- Depend on latest version of GCM from play services -->
+        <framework src="com.google.android.gms:play-services-gcm:+" />
+        <!-- Depend on v21 of appcompat-v7 support library -->
+        <framework src="com.android.support:appcompat-v7:21+" />    </platform>
 </plugin>
