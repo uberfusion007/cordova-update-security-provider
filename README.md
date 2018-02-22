@@ -14,6 +14,8 @@ Should be used after `deviceready` event has fired, and before any senstive data
 
 The object returned from the `installIfNeededAsync()`'s promise is a JSON object that has a key of `providerInstalledUpdated` with `not_available`, `installed`, or `action_required`.
 
+The app consuming this can warn the user after that additional actions need to be taken, if necessary.
+
 
 ES6+/Ionic:
 ```
