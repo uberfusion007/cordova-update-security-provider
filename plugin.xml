@@ -21,7 +21,7 @@ xmlns:android="http://schemas.android.com/apk/res/android"
 
         </config-file> -->
         
-        <source-file src="src/android/SecurityProvider.java" target-dir="src/com/abhishekjoshi/cordova-update-security-provider" />
+        <source-file src="src/SecurityProvider.java" target-dir="src/com/abhishekjoshi/cordova-update-security-provider" />
         <!-- <lib-file src="src/android/google-play-services.jar" /> -->
     </platform>
 </plugin>
