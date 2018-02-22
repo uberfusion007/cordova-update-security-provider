@@ -12,6 +12,9 @@ __Usage:__
 
 Should be used after `deviceready` event has fired, and before any senstive data has been attempted to be transmitted.
 
+The object returned from the `installIfNeededAsync()`'s promise is a JSON object that has a key of `providerInstalledUpdated` with `not_available`, `installed`, or `action_required`.
+
+
 ES6+/Ionic:
 ```
       declare var SecurityProvider;
@@ -25,3 +28,5 @@ ES6+/Ionic:
       });
 
 ```
+
+TODO: Better handling of Fatal errors.
