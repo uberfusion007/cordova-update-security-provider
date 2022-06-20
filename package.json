@@ -1,6 +1,6 @@
 {
-	"name": "cordova-update-security-provider",
-	"version": "1.0.0",
+	"name": "@uberfusion007/cordova-update-security-provider",
+	"version": "1.0.1",
 	"cordova": {
 		"id": "cordova-update-security-provider",
 		"platforms": [
@@ -10,7 +10,10 @@
     "description": "A plugin that checks Google Play Services to ensure we are susceptible to man in the middle attacks. See for more here: https://developer.android.com/training/articles/security-gms-provider.html ",
     "repository": {
         "type": "git",
-        "url": "https://github.com/AbhishekJoshi/cordova-update-security-provider"
+        "url": "git+https://github.com/uberfusion007/cordova-update-security-provider.git"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
     },
     "keywords": [
         "cordova",

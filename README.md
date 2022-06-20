@@ -3,7 +3,8 @@ Android Security Provider Plugin for Apache Cordova
 ==================================
 
 __Installation:__
-`ionic cordova plugin add https://github.com/AbhishekJoshi/cordova-update-security-provider`
+1. To add this plugin just type: `cordova plugin add @uberfusion007/cordova-update-security-provider`
+2. To remove this plugin type: `cordova plugin remove cordova-update-security-provider`
 
 
 Read more about this topic: https://developer.android.com/training/articles/security-gms-provider.html 
